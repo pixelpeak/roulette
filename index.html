@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>waywayland</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section id="modal" class="hidden">
+    <div class="ta-c">
+      <img class="w-90per" src="./img/card-detail.png" alt="引いたカード">
+    </div>
+    <div id="close" class="spin">サイコロをふる</div>
+    <div id="return" class="status">
+      もどる
+    </div>
+  </section>
+  <div id="card-choice" class="hidden">
+    <div id="status">カードを一枚えらんでね</div>
+    <ul class="ul">
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+    </ul>
+    <ul class="ul">
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+    </ul>
+    <ul class="ul justify">
+      <li class="mr-7 open"><img src="./img/card.png"></li>
+      <li class="open"><img src="./img/card.png"></li>
+    </ul>
+    <div class="mt-24">
+      <img class="w-55per" src="./img/kliner.png">
+    </div>
+  </div>
+  <div id="mask" class="hidden"></div>
+  <main></main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
