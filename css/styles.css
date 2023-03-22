@@ -1,17 +1,19 @@
 body {
-  background: #111;
   font-size: 16px;
   font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
 main {
-  width: 300px;
   padding: 36px;
   border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 120px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .panel {
@@ -19,33 +21,9 @@ main {
 }
 
 .panel img {
-  height: 110px;
+  height: 400px;
   margin-bottom: 16px;
-}
-
-#status {
-  height: 32px;
-  background: #7D18CF;
-  border-radius: 16px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  user-select: none;
-  margin-bottom: 16px;
-}
-.status {
-  width: 70px;
-  height: 32px;
-  background: #7D18CF;
-  border-radius: 4px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  user-select: none;
-  margin-bottom: 16px;
-  margin: 16px auto;
+  background-color: aliceblue;
 }
 
 #spin {
@@ -71,18 +49,6 @@ main {
   color: #fff;
   user-select: none;
   margin: 0 auto 16px;
-}
-#draw-card {
-  cursor: pointer;
-  width: 280px;
-  height: 36px;
-  background: #2DD63E;
-  border-radius: 18px;
-  line-height: 36px;
-  text-align: center;
-  color: #fff;
-  user-select: none;
-  margin: 0 auto;
 }
 
 .unmatched {
