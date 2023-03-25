@@ -27,6 +27,7 @@
         this.spin();
         this.spinStop.textContent = 'ストップ';
         music.play();
+        music.loop = true;
       });
 
       section.appendChild(this.img);
