@@ -2,6 +2,10 @@ body {
   font-size: 16px;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  background-image: url(../img/bk_dot.jpeg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 main {
@@ -20,9 +24,11 @@ main {
 }
 
 .panel img {
+  width: 650px;
   height: 400px;
-  margin-bottom: 16px;
-  background-color: aliceblue;
+  margin-bottom: 150px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 #spin {
