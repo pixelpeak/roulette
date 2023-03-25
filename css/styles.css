@@ -7,13 +7,12 @@ body {
 main {
   padding: 36px;
   border-radius: 12px;
-  margin: 120px auto;
+  margin: 40px auto;
+  text-align: center;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 40px;
+.max-w-img {
+  max-width: 1000px;
 }
 
 .panel {
@@ -38,6 +37,7 @@ h1 {
   user-select: none;
   margin: 0 auto 16px;
 }
+
 .spin {
   cursor: pointer;
   width: 280px;
@@ -58,15 +58,19 @@ h1 {
 .slidein {
   animation: slideIn .8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
 }
+
 @keyframes slideIn {
   0% {
     transform: translateY(-1200px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
   }
-  40%,100% {
+
+  40%,
+  100% {
     opacity: 1;
   }
 }
@@ -85,31 +89,60 @@ h1 {
 .red {
   color: #ec6f00;
 }
-.hidden {display: none;}
-.h-110 {height: 110px;}
-.w-20per {width: 20%;}
+
+.hidden {
+  display: none;
+}
+
+.h-110 {
+  height: 110px;
+}
+
+.w-20per {
+  width: 20%;
+}
+
 .ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
+
 .ul li {
   width: 23%;
 }
+
 .ul li img {
   width: 100%;
 }
+
 .justify {
   justify-content: center;
 }
-.mt-24 {margin-top:24px;}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
 .mr-7 {
   margin-right: 7px;
 }
-.w-full {width: 100%;}
-.w-70per {width: 70%;}
-.w-55per {width: 55%;}
-.w-90per {width: 90%;}
+
+.w-full {
+  width: 100%;
+}
+
+.w-70per {
+  width: 70%;
+}
+
+.w-55per {
+  width: 55%;
+}
+
+.w-90per {
+  width: 90%;
+}
 
 #modal {
   padding: 20px;
@@ -122,6 +155,7 @@ h1 {
   transition: transform 0.4s;
   z-index: 2;
 }
+
 #mask {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -131,4 +165,7 @@ h1 {
   left: 0;
   z-index: 1;
 }
-.ta-c {text-align: center;}
+
+.ta-c {
+  text-align: center;
+}
