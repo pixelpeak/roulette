@@ -46,15 +46,24 @@ main {
   color: white;
 }
 
+.speed-bar {
+  background-color: rgb(215, 215, 215);
+  border: solid 1px #dee6f2;
+  opacity: 0.8;
+  border-radius: 20px;
+  height: 12px;
+}
+
 input[type="range"] {
-  cursor: pointer;
-  appearance: auto;
-  cursor: default;
-  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
-  padding: initial;
-  border: initial;
-  margin: 2px;
-  background: #9ecbf3;
+  opacity: 0.8;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: rgb(101, 144, 245);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 .mt-20 {

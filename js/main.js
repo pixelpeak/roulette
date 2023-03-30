@@ -1,4 +1,4 @@
-var frames = document
+const frames = document
   .getElementsByClassName("anime")[0]
   .getElementsByTagName("img");
 viewFrame();
@@ -14,7 +14,7 @@ function viewFrame(frame_no = -1) {
     frames[0].style.display = "block";
     frame_no = 0;
   }
-  var msec = document.getElementById("anime_speed").value;
+  const msec = document.getElementById("anime_speed").value;
   setTimeout(function () {
     viewFrame(frame_no);
   }, msec);
