@@ -1,3 +1,16 @@
+const imageCount = 5;
+const imageFolderPath = "img/";
+const imageFileName = "gift-";
+const imageFileExtension = ".png";
+
+const animeDiv = document.querySelector(".anime");
+
+for (let i = 1; i <= imageCount; i++) {
+  const img = document.createElement("img");
+  img.src = `${imageFolderPath}${imageFileName}${i}${imageFileExtension}`;
+  animeDiv.appendChild(img);
+}
+
 const frames = document
   .getElementsByClassName("anime")[0]
   .getElementsByTagName("img");
