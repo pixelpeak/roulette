@@ -1,3 +1,24 @@
+// microCMSから画像を取得する
+async function fetchImages() {
+  const response = await fetch("https://pixelpeak.microcms.io/api/v1/img", {
+    method: "GET",
+    headers: {
+      "X-API-KEY": "alGh59Xxuh00qhalyypQfgOYdDDXJ1yo9Bwh",
+    },
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    console.log("Fetched images:", data);
+    const imageUrls = data.contents.map((entry) => entry.title.url);
+    console.log("Image URLs:", imageUrls);
+  } else {
+    console.error("Error fetching images:", response.statusText);
+  }
+}
+
+fetchImages();
+
 const imageCount = 5;
 const imageFolderPath = "img/";
 const imageFileName = "gift-";
