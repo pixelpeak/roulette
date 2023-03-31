@@ -1,4 +1,3 @@
-// microCMSから画像を取得する
 async function fetchImages() {
   const response = await fetch("https://pixelpeak.microcms.io/api/v1/img", {
     method: "GET",
@@ -12,30 +11,33 @@ async function fetchImages() {
     console.log("Fetched images:", data);
     const imageUrls = data.contents.map((entry) => entry.title.url);
     console.log("Image URLs:", imageUrls);
+
+    // Append fetched images to the anime div and call viewFrame
+    appendImagesToDiv(imageUrls);
   } else {
     console.error("Error fetching images:", response.statusText);
   }
 }
 
-fetchImages();
+function appendImagesToDiv(imageUrls) {
+  const animeDiv = document.querySelector(".anime");
 
-const imageCount = 5;
-const imageFolderPath = "img/";
-const imageFileName = "gift-";
-const imageFileExtension = ".png";
+  imageUrls.forEach((imageUrl, index) => {
+    const img = document.createElement("img");
+    img.src = imageUrl;
+    if (index !== 0) {
+      img.style.display = "none";
+    }
+    animeDiv.appendChild(img);
+  });
 
-const animeDiv = document.querySelector(".anime");
-
-for (let i = 1; i <= imageCount; i++) {
-  const img = document.createElement("img");
-  img.src = `${imageFolderPath}${imageFileName}${i}${imageFileExtension}`;
-  animeDiv.appendChild(img);
+  // Call viewFrame after appending images
+  viewFrame();
 }
 
 const frames = document
   .getElementsByClassName("anime")[0]
   .getElementsByTagName("img");
-viewFrame();
 
 function viewFrame(frame_no = -1) {
   if (frames[frame_no]) {
@@ -60,3 +62,6 @@ function play() {
   music.loop = true;
   music.play();
 }
+
+// Call fetchImages at the end
+fetchImages();
