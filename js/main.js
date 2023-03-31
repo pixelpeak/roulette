@@ -9,7 +9,7 @@ async function fetchImages() {
   if (response.ok) {
     const data = await response.json();
     console.log("Fetched images:", data);
-    const imageUrls = data.contents.map((entry) => entry.title.url);
+    const imageUrls = data.contents.map((entry) => entry.img.url);
     console.log("Image URLs:", imageUrls);
 
     // Append fetched images to the anime div and call viewFrame
