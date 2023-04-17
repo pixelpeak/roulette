@@ -1,19 +1,19 @@
 async function fetchImages() {
-  const response = await fetch("https://pixelpeak.microcms.io/api/v1/img", {
-    method: "GET",
-    headers: {
-      "X-API-KEY": "alGh59Xxuh00qhalyypQfgOYdDDXJ1yo9Bwh",
-    },
-  });
+  const responseNewt = await fetch(
+    // https://{spaceUid}.cdn.newt.so/v1/{appUid}/{modelUid}
+    "https://pixelpeak.cdn.newt.so/v1/field-1/image",
+    {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer GMIyC18AcPx6LGigE8srP9pDHLhR_D8goOA3_oZLmhk",
+      },
+    }
+  );
 
-  if (response.ok) {
-    const data = await response.json();
-    const imageUrls = data.contents.map((entry) => entry.img.url);
-
-    // Append fetched images to the anime div and call viewFrame
+  if (responseNewt.ok) {
+    const dataNewt = await responseNewt.json();
+    const imageUrls = dataNewt.items.map((entry) => entry.image.src);
     appendImagesToDiv(imageUrls);
-  } else {
-    console.error("Error fetching images:", response.statusText);
   }
 }
 
