@@ -57,7 +57,7 @@ main {
 
 @media screen and (min-width: 1180px) and (max-width: 1440px) {
   .max-w-img {
-    max-width: 700px;
+    max-width: 800px;
     margin-bottom: 20px;
   }
 
