@@ -38,6 +38,87 @@ main {
   margin-top: 0px;
 }
 
+@media screen and (min-width: 1441px) {
+  .max-w-img {
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+
+  .anime img {
+    width: 840px;
+    height: 455px;
+    margin-bottom: 130px;
+  }
+
+  .h1-mt {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1440px) {
+  .max-w-img {
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+
+  .anime {
+    height: 480px;
+  }
+
+  .anime img {
+    width: 840px;
+    height: 455px;
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+  .max-w-img {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .anime {
+    height: 400px;
+  }
+
+  .anime img {
+    width: 672px;
+    height: 364px;
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .max-w-img {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .anime {
+    height: 300px;
+  }
+
+  .anime img {
+    width: 480px;
+    height: 260px;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .max-w-img {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .anime img {
+    width: 288px;
+    height: 156px;
+    margin-bottom: 150px;
+  }
+}
+
 #anime_speed {
   transform: rotateY(180deg);
 }
