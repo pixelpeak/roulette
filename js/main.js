@@ -1,7 +1,7 @@
 async function fetchImages() {
   const responseNewt = await fetch(
     // https://{spaceUid}.cdn.newt.so/v1/{appUid}/{modelUid}
-    "https://pixelpeak.cdn.newt.so/v1/field-1/image",
+    "https://pixelpeak.cdn.newt.so/v1/field-2/image",
     {
       method: "GET",
       headers: {
