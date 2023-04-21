@@ -54,7 +54,7 @@ function viewFrame(frame_no = -1) {
   }, msec);
 }
 
-const music = new Audio("musics/MusMus-BGM-126.mp3");
+const music = new Audio("musics/drumroll.mp3");
 
 function play() {
   music.loop = true;
