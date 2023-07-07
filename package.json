@@ -1,0 +1,24 @@
+{
+  "name": "roulette",
+  "version": "1.0.0",
+  "description": "## 本番環境 - main -> https://pixelpeak-roulette1.netlify.app/ - main-2 -> https://pixelpeak-roulette2.netlify.app/ - main-3 -> https://pixelpeak-roulette3.netlify.app/ - main-4 -> https://pixelpeak-roulette4.netlify.app/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelpeak/roulette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixelpeak/roulette/issues"
+  },
+  "homepage": "https://github.com/pixelpeak/roulette#readme",
+  "dependencies": {
+    "safe-compare": "^1.1.4",
+    "static-auth": "^2.1.2"
+  }
+}
